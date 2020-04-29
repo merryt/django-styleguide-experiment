@@ -16,7 +16,6 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "@babel/preset-react": "^7.9.4",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
@@ -37,8 +36,6 @@
     "axios": "^0.19.2",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "vue": "^2.6.11",
     "vue-cli": "^2.9.6"
   }
