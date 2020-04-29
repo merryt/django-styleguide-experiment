@@ -1,1 +1,2 @@
-console.log("--- webpack compressing ---")
+console.log("running storybook")
+
