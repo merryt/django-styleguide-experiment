@@ -44,6 +44,7 @@ export const sampleDjangoComponent = () => ({
           , {headers: {'Content-Type': 'application/x-www-form-urlencoded'}}
       )
       .then(response => {
+          console.log(response.data)
           this.content = response.data
       })
   },
@@ -62,63 +63,28 @@ export const sampleDjangoComponent = () => ({
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Create props for context
-var props = {
-    "template": 'templatetags/_basic_button.html',
-    "context": {
-        "button_text": "this text comes from react, through vue to a template tag"
-    }
-}
-
-export const DjangoButton = () => {
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://0.0.0.0:8000/compile_django/", true);
-    xhr.setRequestHeader('Content-type',    'application/json')
-    var template;
-    xhr.onload = () => {
-        template = xhr.response;
-        console.log(template);
-        this.setState({ template });
-    }
-
-    xhr.send(JSON.stringify( props ));
-
-    return `<div>${template}</div>`
-
-}
-
-
-
-
-
-
+// // Create props for context
+// var props = {
+//     "template": 'templatetags/_basic_button.html',
+//     "context": {
+//         "button_text": "this text comes from react, through vue to a template tag"
+//     }
+// }
+//
+// export const DjangoButton = () => {
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("POST", "http://0.0.0.0:8000/compile_django/", true);
+//     xhr.setRequestHeader('Content-type',    'application/json')
+//     var template;
+//     xhr.onload = () => {
+//         template = xhr.response;
+//         console.log(template);
+//         this.setState({ template });
+//     }
+//
+//     xhr.send(JSON.stringify( props ));
+//
+//     return `<div>${template}</div>`
+//
+// }
 

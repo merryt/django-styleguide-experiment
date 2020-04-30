@@ -11,3 +11,9 @@ export default {
     }
 }
 </script>
+
+<style>
+*{
+fontFamily: '"Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif'
+}
+</style>
